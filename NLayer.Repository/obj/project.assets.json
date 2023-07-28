@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "NLayer.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/NLayer.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NLayer.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NLayer.Core/1.0.0": {
+      "type": "project",
+      "path": "../NLayer.Core/NLayer.Core.csproj",
+      "msbuildProject": "../NLayer.Core/NLayer.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "NLayer.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\fakia\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\OnlineAcademy\\OnlineAcademy\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Repository\\NLayer.Repository.csproj",
       "projectName": "NLayer.Repository",
-      "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\OnlineAcademy\\OnlineAcademy\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj",
+      "projectPath": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Repository\\NLayer.Repository.csproj",
       "packagesPath": "C:\\Users\\fakia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\OnlineAcademy\\OnlineAcademy\\OnlineAcademy\\NLayer.Repository\\obj\\",
+      "outputPath": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fakia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -35,7 +54,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Core\\NLayer.Core.csproj": {
+              "projectPath": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Core\\NLayer.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

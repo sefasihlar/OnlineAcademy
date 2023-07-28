@@ -6,4 +6,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NLayer.Core\NLayer.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+    <Folder Include="Configurations\" />
+    <Folder Include="UnitOfWorks\" />
+    <Folder Include="Token\" />
+    <Folder Include="Seeds\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>

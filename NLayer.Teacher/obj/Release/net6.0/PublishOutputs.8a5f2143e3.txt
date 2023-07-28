@@ -1,0 +1,7 @@
+D:\AA_VisualStudio\MyNutGet\Online Academy\NLayer.Teacher\obj\Release\net6.0\PubTmp\Out\NLayer.Teacher.exe
+D:\AA_VisualStudio\MyNutGet\Online Academy\NLayer.Teacher\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\AA_VisualStudio\MyNutGet\Online Academy\NLayer.Teacher\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\AA_VisualStudio\MyNutGet\Online Academy\NLayer.Teacher\obj\Release\net6.0\PubTmp\Out\NLayer.Teacher.dll
+D:\AA_VisualStudio\MyNutGet\Online Academy\NLayer.Teacher\obj\Release\net6.0\PubTmp\Out\NLayer.Teacher.deps.json
+D:\AA_VisualStudio\MyNutGet\Online Academy\NLayer.Teacher\obj\Release\net6.0\PubTmp\Out\NLayer.Teacher.runtimeconfig.json
+D:\AA_VisualStudio\MyNutGet\Online Academy\NLayer.Teacher\obj\Release\net6.0\PubTmp\Out\NLayer.Teacher.pdb
