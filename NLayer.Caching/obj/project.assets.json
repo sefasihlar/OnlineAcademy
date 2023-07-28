@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Caching\\NLayer.Caching.csproj",
+      "projectUniqueName": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Caching\\NLayer.Caching.csproj",
       "projectName": "NLayer.Caching",
-      "projectPath": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Caching\\NLayer.Caching.csproj",
+      "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Caching\\NLayer.Caching.csproj",
       "packagesPath": "C:\\Users\\fakia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Caching\\obj\\",
+      "outputPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Caching\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fakia\\AppData\\Roaming\\NuGet\\NuGet.Config",
