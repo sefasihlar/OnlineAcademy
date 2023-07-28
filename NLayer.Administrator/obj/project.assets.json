@@ -68,11 +68,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Administrator\\NLayer.Administrator.csproj",
+      "projectUniqueName": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Administrator\\NLayer.Administrator.csproj",
       "projectName": "NLayer.Administrator",
-      "projectPath": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Administrator\\NLayer.Administrator.csproj",
+      "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Administrator\\NLayer.Administrator.csproj",
       "packagesPath": "C:\\Users\\fakia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Administrator\\obj\\",
+      "outputPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Administrator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fakia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,8 +92,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Service\\NLayer.Service.csproj": {
-              "projectPath": "C:\\Users\\fakia\\Downloads\\Online Academy\\Online Academy\\NLayer.Service\\NLayer.Service.csproj"
+            "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj": {
+              "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj"
             }
           }
         }
