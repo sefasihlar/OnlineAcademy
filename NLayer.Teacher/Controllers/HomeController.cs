@@ -15,8 +15,8 @@ namespace NLayer.Teacher.Controllers
 
         public IActionResult Index()
         {
-            var test = "Test Ediyorum";
-            return View(test);
+           
+            return View();
         }
 
         public IActionResult Privacy()

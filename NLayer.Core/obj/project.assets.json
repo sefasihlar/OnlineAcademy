@@ -8,25 +8,27 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\metaa\\.nuget\\packages\\": {}
+    "C:\\Users\\fakia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj",
+      "projectUniqueName": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj",
       "projectName": "NLayer.Core",
-      "projectPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj",
-      "packagesPath": "C:\\Users\\metaa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\obj\\",
+      "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj",
+      "packagesPath": "C:\\Users\\fakia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\metaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fakia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -61,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

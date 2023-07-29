@@ -15,8 +15,8 @@ namespace NLayer.Student.Controllers
 
         public IActionResult Index()
         {
-            var test = "Sefa test denemesi";
-            return View(test);
+           
+            return View();
         }
 
         public IActionResult Privacy()
