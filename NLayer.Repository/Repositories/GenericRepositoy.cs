@@ -1,4 +1,6 @@
-﻿using NLayer.Core.Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+using NLayer.Core.Concrate;
+using NLayer.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,54 +12,65 @@ namespace NLayer.Repository.Repositories
 {
     public class GenericRepositoy<T> : IGenericRepository<T> where T : class
     {
-        public Task AddAsycn(T entity)
+        protected readonly AppDbContext _context;
+
+        private readonly DbSet<T> _dbSet;
+
+        public GenericRepositoy(AppDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _dbSet = _context.Set<T>();
         }
 
-        public Task AddRangeAsycn(IEnumerable<T> entities)
+        public async Task AddAsycn(T entity)
         {
-            throw new NotImplementedException();
+            await _dbSet.AddAsync(entity);
         }
 
-        public Task<bool> AnyAsycn(Expression<Func<T, bool>> filter)
+        public async Task AddRangeAsycn(IEnumerable<T> entities)
         {
-            throw new NotImplementedException();
+            await _dbSet.AddRangeAsync(entities);
+        }
+
+        public async Task<bool> AnyAsycn(Expression<Func<T, bool>> filter)
+        {
+            return await _dbSet.AnyAsync(filter);
         }
 
         public IQueryable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _dbSet.AsNoTracking().AsQueryable();
+            //çekilen veriler memoride tutulmaması için AsNoTracking kullandık
         }
 
-        public Task<T> GetByIdAsycn(int id)
+        public async Task<T> GetByIdAsycn(int id)
         {
-            throw new NotImplementedException();
+            return await _dbSet.FindAsync(id);
         }
 
-        public Task<T> GetByIdsAsycn(int id, int id2)
+        public async Task<T> GetByIdsAsycn(int id, int id2)
         {
-            throw new NotImplementedException();
+            return await _dbSet.FindAsync(id, id2);
         }
 
         public void Remove(T entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Remove(entity);
         }
 
         public void RemoveRange(IEnumerable<T> entites)
         {
-            throw new NotImplementedException();
+            _dbSet.RemoveRange(entites);
         }
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Update(entity);
         }
 
         public IQueryable<T> Where(Expression<Func<T, bool>> filter)
         {
-            throw new NotImplementedException();
+            return _dbSet.Where(filter);
         }
     }
 }
