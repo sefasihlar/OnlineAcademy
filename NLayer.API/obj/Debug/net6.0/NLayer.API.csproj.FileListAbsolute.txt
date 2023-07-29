@@ -75,3 +75,17 @@ C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\obj\Debug\net6.0\
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\obj\Debug\net6.0\NLayer.API.pdb
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\obj\Debug\net6.0\NLayer.API.genruntimeconfig.cache
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\obj\Debug\net6.0\ref\NLayer.API.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\MailKit.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\MimeKit.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\System.Formats.Asn1.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll

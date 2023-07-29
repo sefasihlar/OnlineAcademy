@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qeJmJidXRvGWU0t7I3Te35YUKGBoo6de7reUpS58FZp8MrnrlQI8LhWSIHH2tuYaqyCJ6wIIOjiXpKIx//C+BQ==",
+  "dgSpecHash": "ahmBLTcB9VCimYCO0fgsTqvB4/VHEgmrSyLmhi+RRAcK+1QabxwZz8tgE8J3ovc86gEqhJmTERieaubIC3lLuw==",
   "success": true,
   "projectFilePath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\metaa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
@@ -27,8 +28,10 @@
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.20\\microsoft.entityframeworkcore.6.0.20.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.20\\microsoft.entityframeworkcore.abstractions.6.0.20.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.20\\microsoft.entityframeworkcore.analyzers.6.0.20.nupkg.sha512",
+    "C:\\Users\\metaa\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.20\\microsoft.entityframeworkcore.design.6.0.20.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.20\\microsoft.entityframeworkcore.relational.6.0.20.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.20\\microsoft.entityframeworkcore.sqlserver.6.0.20.nupkg.sha512",
+    "C:\\Users\\metaa\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.20\\microsoft.entityframeworkcore.tools.6.0.20.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\metaa\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
