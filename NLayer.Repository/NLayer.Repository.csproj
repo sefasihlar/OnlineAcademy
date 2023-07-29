@@ -13,10 +13,12 @@
   <ItemGroup>
     <Folder Include="Concrete\" />
     <Folder Include="Configurations\" />
-    <Folder Include="UnitOfWorks\" />
+    <Folder Include="Concrete\" />
+    <Folder Include="Configurations\" />
     <Folder Include="Token\" />
     <Folder Include="Seeds\" />
-    <Folder Include="Repositories\" />
+    <Folder Include="Token\" />
+    <Folder Include="Seeds\" />
   </ItemGroup>
 
 </Project>

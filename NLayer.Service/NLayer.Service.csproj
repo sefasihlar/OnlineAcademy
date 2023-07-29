@@ -15,6 +15,12 @@
     <Folder Include="FluentValidations\" />
     <Folder Include="GenericManager\" />
     <Folder Include="Mapping\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="FluentValidations\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="GenericManager\" />
+    <Folder Include="NewFolder\" />
+    <Folder Include="Services\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
