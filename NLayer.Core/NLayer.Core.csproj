@@ -13,11 +13,27 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="DTOs\" />
-    <Folder Include="UnitOfWorks\" />
-    <Folder Include="Token\" />
-    <Folder Include="UnitOfWorks\" />
+    <Folder Include="DTOs\AppRoleDtos\" />
+    <Folder Include="DTOs\AppUserDtos\" />
+    <Folder Include="DTOs\BranchDtos\" />
+    <Folder Include="DTOs\CartDtos\" />
+    <Folder Include="DTOs\CartItemDtos\" />
+    <Folder Include="DTOs\ClassDtos\" />
+    <Folder Include="DTOs\ClassBranchDtos\" />
+    <Folder Include="DTOs\ExamDtos\" />
+    <Folder Include="DTOs\ExamAnswersDtos\" />
+    <Folder Include="DTOs\GuardianDtos\" />
+    <Folder Include="DTOs\LessonDtos\" />
+    <Folder Include="DTOs\LevelDtos\" />
+    <Folder Include="DTOs\MessageDtos\" />
+    <Folder Include="DTOs\UserRoleDtos\" />
+    <Folder Include="DTOs\SubjectDtos\" />
+    <Folder Include="DTOs\SolutionDtos\" />
+    <Folder Include="DTOs\ScorsDtos\" />
+    <Folder Include="DTOs\RoleUserDtos\" />
+    <Folder Include="DTOs\QuestionDtos\" />
+    <Folder Include="DTOs\OutputDtos\" />
+    <Folder Include="DTOs\OptionDtos\" />
   </ItemGroup>
 
   <ItemGroup>

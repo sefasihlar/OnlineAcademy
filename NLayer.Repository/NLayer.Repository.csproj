@@ -11,11 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configurations\" />
-    <Folder Include="Configurations\" />
-    <Folder Include="Token\" />
     <Folder Include="Seeds\" />
-    <Folder Include="Token\" />
     <Folder Include="Seeds\" />
   </ItemGroup>
 

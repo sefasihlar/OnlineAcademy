@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core.Services
 {
-    public interface IGuardionService:IGenericService<Guardian>
+    public interface IGuardianService:IGenericService<Guardian>
     {
     }
 }

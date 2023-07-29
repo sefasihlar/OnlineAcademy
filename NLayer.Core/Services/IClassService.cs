@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core.Services
 {
-    public interface IClassRepository:IGenericService<Class>
+    public interface IClassService:IGenericService<Class>
     {
     }
 }

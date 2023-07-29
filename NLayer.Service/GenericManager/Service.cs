@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NLayer.Core.GenericRepositories;
 using NLayer.Core.GenericService;
+using NLayer.Core.UnitOfWorks;
 using NLayer.Repository.UnitOfWorks;
 using System;
 using System.Collections.Generic;
