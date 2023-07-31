@@ -90,3 +90,5 @@ C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Administrator\bin\Deb
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Administrator\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Administrator\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Administrator\obj\Debug\net6.0\NLayer.Administrator.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Administrator\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Administrator\bin\Debug\net6.0\xunit.core.dll

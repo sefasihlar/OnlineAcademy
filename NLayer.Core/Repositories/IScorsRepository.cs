@@ -1,14 +1,9 @@
 ﻿using NLayer.Core.Concrate;
 using NLayer.Core.GenericRepositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Core.Repositories
 {
-    public interface IScorsRepository:IGenericRepository<Scors>
+    public interface IScorsRepository : IGenericRepository<Scors>
     {
     }
 }

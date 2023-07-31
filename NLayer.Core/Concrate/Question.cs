@@ -1,14 +1,8 @@
 ﻿using NLayer.Core.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace NLayer.Core.Concrate
 {
-    public class Question:BaseEntity
+    public class Question : BaseEntity
     {
         public string? Text { get; set; }
         public string? ImageUrl { get; set; }

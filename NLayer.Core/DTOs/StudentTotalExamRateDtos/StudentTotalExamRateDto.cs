@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NLayer.Core.DTOs.StudentTotalExamRateDtos
+{
+    public class StudentTotalExamRateDto
+    {
+        public decimal TotalMatematik { get; set; }
+        public decimal TotalTukce { get; set; }
+        public decimal TotalFizik { get; set; }
+        public decimal TotalTarih { get; set; }
+        public decimal TotalBiyoloji { get; set; }
+        public decimal TotalKimya { get; set; }
+        public decimal TotalCografya { get; set; }
+        public decimal TotalEdebiyat { get; set; }
+        public decimal TotalFelsefe { get; set; }
+    }
+}

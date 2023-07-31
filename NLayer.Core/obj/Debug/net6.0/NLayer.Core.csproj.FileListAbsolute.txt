@@ -1,5 +1,4 @@
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\bin\Debug\net6.0\NLayer.Core.deps.json
-C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\bin\Debug\net6.0\NLayer.Core.runtimeconfig.json
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\bin\Debug\net6.0\NLayer.Core.dll
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\bin\Debug\net6.0\NLayer.Core.pdb
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\obj\Debug\net6.0\NLayer.Core.csproj.AssemblyReference.cache
@@ -10,5 +9,4 @@ C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\obj\Debug\net6.0
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\obj\Debug\net6.0\NLayer.Core.dll
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\obj\Debug\net6.0\refint\NLayer.Core.dll
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\obj\Debug\net6.0\NLayer.Core.pdb
-C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\obj\Debug\net6.0\NLayer.Core.genruntimeconfig.cache
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Core\obj\Debug\net6.0\ref\NLayer.Core.dll

@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NLayer.Core.Concrate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Repository.Configurations
 {
@@ -13,7 +8,14 @@ namespace NLayer.Repository.Configurations
     {
         public void Configure(EntityTypeBuilder<Solution> builder)
         {
-            throw new NotImplementedException();
+            builder.HasOne(q => q.Question)
+                .WithMany()
+                .HasForeignKey(q => q.QuestionId)
+                .OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(q => q.Option)
+                .WithMany()
+                .HasForeignKey(q => q.OptionId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

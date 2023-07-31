@@ -44,6 +44,24 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.AspNetCore.Razor.Runtime": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.15, )"
@@ -116,19 +134,9 @@
               "target": "Package",
               "version": "[6.0.20, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "xunit.extensibility.core": {
               "target": "Package",
-              "version": "[6.0.20, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.20, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.20, )"
+              "version": "[2.5.0, )"
             }
           },
           "imports": [

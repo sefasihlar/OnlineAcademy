@@ -13,38 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\AppRoleDtos\" />
-    <Folder Include="DTOs\AppUserDtos\" />
-    <Folder Include="DTOs\BranchDtos\" />
-    <Folder Include="DTOs\CartDtos\" />
-    <Folder Include="DTOs\CartItemDtos\" />
-    <Folder Include="DTOs\ClassDtos\" />
     <Folder Include="DTOs\ClassBranchDtos\" />
-    <Folder Include="DTOs\ExamDtos\" />
-    <Folder Include="DTOs\ExamAnswersDtos\" />
-    <Folder Include="DTOs\GuardianDtos\" />
-    <Folder Include="DTOs\LessonDtos\" />
-    <Folder Include="DTOs\LevelDtos\" />
-    <Folder Include="DTOs\MessageDtos\" />
-    <Folder Include="DTOs\UserRoleDtos\" />
-    <Folder Include="DTOs\SubjectDtos\" />
-    <Folder Include="DTOs\SolutionDtos\" />
-    <Folder Include="DTOs\ScorsDtos\" />
-    <Folder Include="DTOs\RoleUserDtos\" />
-    <Folder Include="DTOs\QuestionDtos\" />
-    <Folder Include="DTOs\OutputDtos\" />
-    <Folder Include="DTOs\OptionDtos\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.20" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.20" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.20" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.20">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="xunit.extensibility.core" Version="2.5.0" />
   </ItemGroup>
 
 </Project>

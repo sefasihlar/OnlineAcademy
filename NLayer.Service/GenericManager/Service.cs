@@ -2,13 +2,7 @@
 using NLayer.Core.GenericRepositories;
 using NLayer.Core.GenericService;
 using NLayer.Core.UnitOfWorks;
-using NLayer.Repository.UnitOfWorks;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Service.GenericManager
 {

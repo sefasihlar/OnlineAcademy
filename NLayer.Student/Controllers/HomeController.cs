@@ -15,7 +15,7 @@ namespace NLayer.Student.Controllers
 
         public IActionResult Index()
         {
-           
+
             return View();
         }
 
