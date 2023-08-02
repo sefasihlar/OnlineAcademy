@@ -15,7 +15,7 @@ namespace NLayer.Core.Services
 
         void DeleteFromCart(string userId, int examId);
 
-        Cart GetCartByUserId(string userId);
+        Task<Cart> GetCartByUserId(string userId);
 
         void AddToCart(string userId, int examId);
 

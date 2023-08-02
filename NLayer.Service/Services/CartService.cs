@@ -20,30 +20,24 @@ namespace NLayer.Service.Services
             _mapper=mapper;
         }
 
-        public void AddToCart(string userId, int examId)
+        public async void AddToCart(string userId, int examId)
         {
-            throw new NotImplementedException();
+            var cart =await  GetCartByUserId(userId);
+            if (cart != null)
+            {
+                var index = cart.CartItems.FindIndex(x => x.ExamId == examId);
+                if (index < 0)
+                {
+                    cart.CartItems.Add(new CartItem()
+                    {
+                        ExamId = examId,
+                        CartId = cart.Id,
+                    });
+                }
+
+                _cartRepository.Update(cart);
+            }
         }
-
-        //public void AddToCart(string userId, int examId)
-        //{
-        //    var cart = GetCartByUserId(userId);
-        //    if (cart != null)
-        //    {
-        //        var index = cart.CartItems.FindIndex(x => x.ExamId == examId);
-        //        if (index < 0)
-        //        {
-        //            cart.CartItems.Add(new CartItem()
-        //            {
-        //                ExamId = examId,
-        //                CartId = cart.Id,
-        //            });
-        //        }
-
-
-        //        _cartRepository.Update(cart);
-        //    }
-        //}
 
         //burada hata alabiliriz
         public void ClearCart(string cartId)
@@ -92,9 +86,6 @@ namespace NLayer.Service.Services
             _cartRepository.AddAsycn(new Cart() { UserId = userId });
         }
 
-        Cart ICartService.GetCartByUserId(string userId)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }
