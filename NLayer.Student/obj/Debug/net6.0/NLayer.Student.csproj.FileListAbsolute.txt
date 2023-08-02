@@ -92,3 +92,4 @@ C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Student\bin\Debug\net
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Student\obj\Debug\net6.0\NLayer.Student.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Student\bin\Debug\net6.0\xunit.abstractions.dll
 C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Student\bin\Debug\net6.0\xunit.core.dll
+C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Student\bin\Debug\net6.0\Newtonsoft.Json.dll

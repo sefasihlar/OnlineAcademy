@@ -17,6 +17,7 @@ namespace NLayer.Core.DTOs.ClassDtos
         public string? Name { get; set; }
 
         public List<Branch>? SelectedBranch { get; set; }
+        public List<ClassBranch> ClassBranches { get; set; }
 
     }
 }
