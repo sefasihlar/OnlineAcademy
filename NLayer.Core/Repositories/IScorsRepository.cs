@@ -5,5 +5,6 @@ namespace NLayer.Core.Repositories
 {
     public interface IScorsRepository : IGenericRepository<Scors>
     {
+        Task<List<Scors>> GetTogetherList();
     }
 }

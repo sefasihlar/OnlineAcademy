@@ -5,5 +5,6 @@ namespace NLayer.Core.Repositories
 {
     public interface IGuardianRepository : IGenericRepository<Guardian>
     {
+        Task<List<Guardian>> GetWithStudentList();
     }
 }
