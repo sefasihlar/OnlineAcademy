@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NLayer.Core.Concrate;
 using NLayer.Core.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Repository.Repositories
 {
@@ -17,7 +12,7 @@ namespace NLayer.Repository.Repositories
 
         public async Task<Class> GetByIdWithBrances(int id)
         {
-            return  await _context.Classes
+            return await _context.Classes
                    .Where(x => x.Id == id)
                    .Include(x => x.ClassBranches)
                    .ThenInclude(x => x.Branch)
@@ -26,7 +21,7 @@ namespace NLayer.Repository.Repositories
 
         public async Task<List<ClassBranch>> GetClassBranchList()
         {
-            return  await _context.ClassBranches.ToListAsync();
+            return await _context.ClassBranches.ToListAsync();
         }
 
         public void Update(Class entity, int[] branchIds)

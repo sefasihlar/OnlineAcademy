@@ -4,9 +4,198 @@
 @{
     ViewData["Title"] = "Index";
 }
-@foreach (var item in Model)
-{
-    
-}
-<h1>Index</h1>
+ 
+<br />
+<div class="card">
+    <div class="card-header">
+
+        <div class="row">
+            <div class="col">
+                <nav class="breadcrumb-style-one" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Sınıf</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Tanımlar
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col text-end">
+                <button data-bs-toggle="modal" data-bs-target="#NewClass"
+                        class="btn btn-primary btn-sm">
+                    + Yeni Sınıf
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                <div class="statbox widget box box-shadow">
+                    <div class="widget-content widget-content-area">
+                        <table id="html5-extension" class="table dt-table-hover" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Sınıf</th>
+                                    <th>Oluşturulma Tarihi</th>
+                                    <th>Güncellenme Tarihi</th>
+                                    <th>Durum</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Name</td>
+                                        <td>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                 height="18" viewBox="0 0 24 24" fill="none"
+                                                 stroke="currentColor" stroke-width="2"
+                                                 stroke-linecap="round" stroke-linejoin="round"
+                                                 class="feather feather-calendar text-primary">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2">
+                                                </rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            <span class="table-inner-text">@Convert.ToDateTime(item.CreatedDate).ToString("dd.MM.yyyy")</span>
+                                        </td>
+                                        <td>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                 height="18" viewBox="0 0 24 24" fill="none"
+                                                 stroke="currentColor" stroke-width="2"
+                                                 stroke-linecap="round" stroke-linejoin="round"
+                                                 class="feather feather-calendar text-success">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2">
+                                                </rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                            <span class="table-inner-text">@Convert.ToDateTime(item.UpdatedDate).ToString("dd.MM.yyyy")</span>
+                                        </td>
+                                        @if (!item.Condition)
+                                        {
+                                            <td><b class="badge badge-light-danger">Pasif</b></td>
+                                        }
+                                        else
+                                        {
+                                            <td><b class="badge badge-light-success">Aktif</b></td>
+                                        }
+                                        <td>
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                        class="btn btn-dark btn-sm">
+                                                    İncele
+                                                </button>
+                                                <button type="button"
+                                                        class="btn btn-dark btn-sm dropdown-toggle dropdown-toggle-split"
+                                                        id="dropdownMenuReference1"
+                                                        data-bs-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false" data-reference="parent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                         height="24" viewBox="0 0 24 24" fill="none"
+                                                         stroke="currentColor" stroke-width="2"
+                                                         stroke-linecap="round" stroke-linejoin="round"
+                                                         class="feather feather-chevron-down">
+                                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                                    </svg>
+                                                </button>
+                                                <div class="dropdown-menu"
+                                                     aria-labelledby="dropdownMenuReference1">
+                                                    <a class="dropdown-item" href="#">Pasif Et</a>
+                                                    <a class="dropdown-item" href="#">Sil</a>
+                                                    <a class="dropdown-item" href="#">İşlem 1</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">İşlem 2</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                               
+                                }
+
+                                 
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Yeni Sınıf Eklemek için modal aç -->
+    <div id="NewClass" class="modal animated zoomInUp custo-zoomInUp" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yeni Sınıf Ekle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <form id="NewClassSubmit">
+                    <div class="modal-body">
+                        <div class="row mb-2">
+                            <div class="col-3">
+                                <label for="name">Sınıf Adı</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="name" name="name"
+                                       class="form-control form-control-sm" required
+                                       placeholder="Şube giriniz">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-3">
+                                <label>Durum</label>
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input type="radio" id="male" name="gender"
+                                                   class="form-check-input" value="Erkek" required checked>
+                                            <label class="form-check-label" for="male">Aktif</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-check">
+                                            <input type="radio" id="female" name="gender"
+                                                   class="form-check-input" value="Kadın" required>
+                                            <label class="form-check-label"
+                                                   for="female">Pasif</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer md-button">
+                        <button class="btn btn-light-dark btn-sm"
+                                data-bs-dismiss="modal">
+                            Kapat
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-sm">Kaydet</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
 

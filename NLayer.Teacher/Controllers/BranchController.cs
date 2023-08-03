@@ -21,7 +21,7 @@ namespace NLayer.Teacher.Controllers
             _mapper=mapper;
         }
 
-        public async  Task<IActionResult> Index()
+        public async Task<IActionResult> Index()
         {
             var branches = await _branchService.GetAllAsycn();
             var branchsDto = _mapper.Map<List<BranchDto>>(branches);
@@ -53,6 +53,7 @@ namespace NLayer.Teacher.Controllers
                     Message = "Sube basariyla eklendi",
                     Css = "success"
                 });
+
                 return RedirectToAction("Index", "Branch");
             }
 
@@ -92,7 +93,7 @@ namespace NLayer.Teacher.Controllers
                         TempData.Put("message", new ResultMessageDto()
                         {
                             Title = "Hata",
-                            Message = "Silmeye çalıştığınız kayıt, başka bir tablodaki kayıtlarla ilişkili olduğu için silinemiyor. Lütfen önce ilişkili kayıtları silin veya düzenleyin ve daha sonra tekrar deneyin.",
+                            Message = "Hareket görmüş kayıt silinemez",
                             Css = "error"
                         });
                     }
@@ -131,7 +132,7 @@ namespace NLayer.Teacher.Controllers
 
             var valuesDto = _mapper.Map<BranchDto>(values);
 
-           return View(valuesDto);
+            return View(valuesDto);
         }
 
         [HttpPost]

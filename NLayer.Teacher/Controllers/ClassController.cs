@@ -24,7 +24,7 @@ namespace NLayer.Teacher.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var classes = await _branchService.GetAllAsycn();
+            var classes = await _classService.GetAllAsycn();
             var classDto = _mapper.Map<List<ClassDto>>(classes);
             return View(classDto);
         }
@@ -66,7 +66,7 @@ namespace NLayer.Teacher.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
-            var values =await _classService.GetByIdAsycn(id);
+            var values = await _classService.GetByIdAsycn(id);
 
             try
             {
@@ -122,16 +122,16 @@ namespace NLayer.Teacher.Controllers
         [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
-            var values =await _classService.GetByIdWithBrances(id);
+            var values = await _classService.GetByIdWithBrances(id);
 
             if (values == null)
             {
                 return NotFound();
             }
 
-            var branchList =await _branchService.GetAllAsycn();
-                
-            var branchFilter  = branchList.Where(a => a.Condition == true).ToList();
+            var branchList = await _branchService.GetAllAsycn();
+
+            var branchFilter = branchList.Where(a => a.Condition == true).ToList();
 
             ViewBag.Brances = branchFilter;
 

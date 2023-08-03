@@ -9,7 +9,7 @@ using NLayer.Service.GenericManager;
 
 namespace NLayer.Service.Services
 {
-    public class LessonService : Service<Lesson>,ILessonService
+    public class LessonService : Service<Lesson>, ILessonService
     {
         private readonly ILessonRepository _lessonRepository;
         private readonly IMapper _mapper;

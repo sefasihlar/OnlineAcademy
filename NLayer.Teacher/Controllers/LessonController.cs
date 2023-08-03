@@ -39,7 +39,7 @@ namespace NLayer.Teacher.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var classes =await _classService.GetAllAsycn();
+            var classes = await _classService.GetAllAsycn();
             ViewBag.classes = new SelectList(classes, "Id", "Name");
 
             if (classes == null)
@@ -77,7 +77,7 @@ namespace NLayer.Teacher.Controllers
 
             if (values != null)
             {
-               await _lessonService.AddAsycn(values);
+                await _lessonService.AddAsycn(values);
                 TempData.Put("message", new ResultMessageDto()
                 {
                     Title = "Başarılı",
@@ -146,7 +146,7 @@ namespace NLayer.Teacher.Controllers
         [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
-            var values =await _lessonService.GetByIdAsycn(id);
+            var values = await _lessonService.GetByIdAsycn(id);
 
             if (values == null)
             {
@@ -162,7 +162,7 @@ namespace NLayer.Teacher.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(LessonDto lessonDto)
         {
-            var values =await _lessonService.GetByIdAsycn(lessonDto.Id);
+            var values = await _lessonService.GetByIdAsycn(lessonDto.Id);
 
             if (values == null)
             {

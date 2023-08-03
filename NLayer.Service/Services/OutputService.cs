@@ -9,7 +9,7 @@ using NLayer.Service.GenericManager;
 
 namespace NLayer.Service.Services
 {
-    public class OutputService : Service<Output>,IOutputService
+    public class OutputService : Service<Output>, IOutputService
     {
         private readonly IOutputRepository _outputRepository;
         private readonly IMapper _mapper;

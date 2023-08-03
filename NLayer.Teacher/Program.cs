@@ -1,12 +1,12 @@
-using Autofac.Extensions.DependencyInjection;
 using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NLayer.Core.Concrate;
-using System.Reflection;
 using NLayer.Academy.Modules;
+using NLayer.Core.Concrate;
 using NLayer.Service.Mapping;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
@@ -29,7 +29,7 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 builder.Services.AddIdentity<AppUser, AppRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
-builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
 
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 

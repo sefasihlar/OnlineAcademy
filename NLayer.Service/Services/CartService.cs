@@ -22,7 +22,7 @@ namespace NLayer.Service.Services
 
         public async void AddToCart(string userId, int examId)
         {
-            var cart =await  GetCartByUserId(userId);
+            var cart = await GetCartByUserId(userId);
             if (cart != null)
             {
                 var index = cart.CartItems.FindIndex(x => x.ExamId == examId);
@@ -47,13 +47,13 @@ namespace NLayer.Service.Services
             _cartRepository.Remove(cartDto);
         }
 
-      
+
         public void DeleteFromCart(string userId, int examId)
         {
             var cart = GetCartByUserId(userId);
             if (cart != null)
             {
-               _cartRepository.DeleteFromCart(cart.Id, examId);
+                _cartRepository.DeleteFromCart(cart.Id, examId);
             }
         }
 
@@ -76,8 +76,8 @@ namespace NLayer.Service.Services
 
         public async Task<List<CartDto>> GetListCartItem()
         {
-            var cars =  _cartRepository.GetAll();
-            var cartDto  = _mapper.Map<List<CartDto>>(cars);
+            var cars = _cartRepository.GetAll();
+            var cartDto = _mapper.Map<List<CartDto>>(cars);
             return cartDto;
         }
 
@@ -86,6 +86,6 @@ namespace NLayer.Service.Services
             _cartRepository.AddAsycn(new Cart() { UserId = userId });
         }
 
-      
+
     }
 }

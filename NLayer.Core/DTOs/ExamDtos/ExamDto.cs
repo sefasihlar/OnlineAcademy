@@ -1,17 +1,12 @@
 ﻿using NLayer.Core.Abstract;
 using NLayer.Core.Concrate;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Core.DTOs.ExamDtos
 {
-    public class ExamDto:BaseDto
+    public class ExamDto : BaseDto
     {
-  
+
         [Required]
         public string? Title { get; set; }
         public string Description { get; set; }

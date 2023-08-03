@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NLayer.Core.Concrate;
 using NLayer.Core.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Repository.Repositories
 {
@@ -29,7 +24,7 @@ namespace NLayer.Repository.Repositories
 
         public async Task<Cart> GetByUserId(string userId)
         {
-            return  _context.Carts
+            return _context.Carts
                                     .Include(x => x.CartItems)
                                     .ThenInclude(x => x.Exam)
                                     .ThenInclude(x => x.Subject)

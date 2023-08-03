@@ -9,7 +9,7 @@ using NLayer.Service.GenericManager;
 
 namespace NLayer.Service.Services
 {
-    public class ScorsService : Service<Scors>,IScorsService
+    public class ScorsService : Service<Scors>, IScorsService
     {
 
         private readonly IScorsRepository _scorsRepository;

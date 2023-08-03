@@ -1,5 +1,4 @@
-﻿using AspNetCore;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NLayer.Core.Concrate;
@@ -24,7 +23,7 @@ namespace NLayer.Teacher.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var cart =await _cartService.GetCartByUserId(_userManager.GetUserId(User));
+            var cart = await _cartService.GetCartByUserId(_userManager.GetUserId(User));
 
             var cartDto = new CartDto()
             {

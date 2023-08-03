@@ -8,14 +8,14 @@ namespace NLayer.Repository.Configurations
     {
         public void Configure(EntityTypeBuilder<Question> builder)
         {
-           builder.HasOne(q => q.Level)
-                .WithMany()
-                .HasForeignKey(q => q.LevelId)
-                .OnDelete(DeleteBehavior.Restrict);
-           builder.HasOne(q => q.Output)
-                .WithMany()
-                .HasForeignKey(q => q.OutputId)
-                .OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(q => q.Level)
+                 .WithMany()
+                 .HasForeignKey(q => q.LevelId)
+                 .OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(q => q.Output)
+                 .WithMany()
+                 .HasForeignKey(q => q.OutputId)
+                 .OnDelete(DeleteBehavior.Restrict);
             builder.HasOne(q => q.Subject)
                 .WithMany(s => s.Questions)
                 .HasForeignKey(q => q.SubjectId)

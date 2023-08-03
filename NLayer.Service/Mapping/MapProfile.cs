@@ -38,7 +38,7 @@ namespace NLayer.Service.Mapping
             CreateMap<Class, ClassDto>().ReverseMap();
             CreateMap<Class, ClassListDto>().ReverseMap();
             //ExamAnswer Dtos
-            CreateMap<ExamAnswers,ExamAnswersDto>().ReverseMap();
+            CreateMap<ExamAnswers, ExamAnswersDto>().ReverseMap();
             //Exam Dtos
             CreateMap<Exam, ExamDto>().ReverseMap();
             //ExamQuestion Dtos
@@ -50,7 +50,7 @@ namespace NLayer.Service.Mapping
             //Level Dtos
             CreateMap<Level, LevelDto>().ReverseMap();
             //Message Dtos
-            CreateMap<Message,MessageDto>().ReverseMap();
+            CreateMap<Message, MessageDto>().ReverseMap();
             //Option Dtos
             CreateMap<Option, OptionDto>().ReverseMap();
             //Output Dtos
@@ -58,7 +58,7 @@ namespace NLayer.Service.Mapping
             //Question Dtos
             CreateMap<Question, QuestionDto>().ReverseMap();
             //Scors Dtos
-            CreateMap<Scors,ScorListDto>().ReverseMap();
+            CreateMap<Scors, ScorListDto>().ReverseMap();
             //Solution Dtos
             CreateMap<Solution, SolutionDto>().ReverseMap();
             //Subject Dtos

@@ -1,5 +1,4 @@
 ﻿using NLayer.Core.Concrate;
-using NLayer.Core.DTOs.ExamDtos;
 using NLayer.Core.DTOs.LessonDtos;
 using NLayer.Core.GenericService;
 

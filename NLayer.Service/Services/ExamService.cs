@@ -9,7 +9,7 @@ using NLayer.Service.GenericManager;
 
 namespace NLayer.Service.Services
 {
-    public class ExamService : Service<Exam>,IExamService
+    public class ExamService : Service<Exam>, IExamService
     {
         private readonly IExamRepository _examRepository;
         private readonly IMapper _mapper;
@@ -22,7 +22,7 @@ namespace NLayer.Service.Services
 
         public void DeleteFromExam(int examId, int classId, int lessonId, int subjectId)
         {
-            _examRepository.DeleteFromExam(examId,classId, lessonId, subjectId);
+            _examRepository.DeleteFromExam(examId, classId, lessonId, subjectId);
         }
 
         public async Task<List<ExamDto>> GetWithList()

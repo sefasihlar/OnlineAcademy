@@ -9,7 +9,7 @@ using NLayer.Service.GenericManager;
 
 namespace NLayer.Service.Services
 {
-    public class SubjectService : Service<Subject>,ISubjectService
+    public class SubjectService : Service<Subject>, ISubjectService
     {
         private readonly ISubjectRepository _subjectRepository;
         private readonly IMapper _mapper;
@@ -26,14 +26,14 @@ namespace NLayer.Service.Services
 
         public async Task<List<SubjectDto>> GetWithLessonList()
         {
-            var subjects  = await _subjectRepository.GetWithLessonList();
+            var subjects = await _subjectRepository.GetWithLessonList();
             var subjectsDto = _mapper.Map<List<SubjectDto>>(subjects);
             return subjectsDto.ToList();
         }
 
         public void UpdateAsync(SubjectDto dto)
         {
-           var entity  = _mapper.Map<Subject>(dto);
+            var entity = _mapper.Map<Subject>(dto);
             _subjectRepository.UpdateAsync(entity);
         }
     }

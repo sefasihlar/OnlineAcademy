@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NLayer.Core.Concrate;
 using NLayer.Core.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayer.Repository.Repositories
 {
@@ -29,7 +24,7 @@ namespace NLayer.Repository.Repositories
 
         public async Task<List<ExamQuestions>> GetQuestionsList()
         {
-            return  await _context.ExamQuestions
+            return await _context.ExamQuestions
                     .Include(x => x.Question)
                     .ThenInclude(x => x.Options)
                     .Include(x => x.Exam)

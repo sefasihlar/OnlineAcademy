@@ -64,7 +64,7 @@ namespace NLayer.Teacher.Controllers
                 return RedirectToAction("Index", "Subject");
             }
 
-            var lesson =await _lessonService.GetAllAsycn();
+            var lesson = await _lessonService.GetAllAsycn();
 
             ViewBag.lessons = new SelectList(lesson, "Id", "Name");
 
@@ -79,7 +79,7 @@ namespace NLayer.Teacher.Controllers
         }
 
         [HttpPost]
-        public  async Task<IActionResult> Delete(int subjectId, int lessonId)
+        public async Task<IActionResult> Delete(int subjectId, int lessonId)
         {
             try
             {
@@ -122,7 +122,7 @@ namespace NLayer.Teacher.Controllers
         [HttpGet]
         public async Task<IActionResult> Detail(SubjectDto subjectDto)
         {
-            var values =await _subjectService.GetByIdAsycn(subjectDto.Id);
+            var values = await _subjectService.GetByIdAsycn(subjectDto.Id);
 
             if (values == null)
             {
@@ -137,7 +137,7 @@ namespace NLayer.Teacher.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(SubjectDto subjectDto)
         {
-            var values =await _subjectService.GetByIdAsycn(subjectDto.Id);
+            var values = await _subjectService.GetByIdAsycn(subjectDto.Id);
 
             if (values == null)
             {

@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Diagnostics;
-using NLayer.Service.Exceptions;
-
-namespace NLayer.Academy.Middlewares
+﻿namespace NLayer.Academy.Middlewares
 {
     public class UseCustomExeptionHandler
     {

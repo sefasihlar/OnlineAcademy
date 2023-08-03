@@ -9,7 +9,6 @@ using NLayer.Core.DTOs.QuestionDtos;
 using NLayer.Core.DTOs.ScorsDtos;
 using NLayer.Core.Services;
 using NLayer.WebUI.Extensions;
-using System.Collections.Generic;
 
 namespace NLayer.Teacher.Controllers
 {
@@ -93,7 +92,7 @@ namespace NLayer.Teacher.Controllers
 
             else if (ClassId != 0 && LessonId != 0 && SubjectId == 0)
             {
-               
+
                 ViewBag.Scors = ScorsListDto.scors;
 
                 var val = new ExamListDto()
@@ -182,7 +181,7 @@ namespace NLayer.Teacher.Controllers
 
             if (values != null)
             {
-               await _examService.AddAsycn(values);
+                await _examService.AddAsycn(values);
                 TempData.Put("message", new ResultMessageDto()
                 {
                     Title = "Basariyla Eklendi",
@@ -193,13 +192,13 @@ namespace NLayer.Teacher.Controllers
 
             }
 
-            var lesson =await _lessonService.GetAllAsycn();
+            var lesson = await _lessonService.GetAllAsycn();
             ViewBag.lessons = new SelectList(lesson, "Id", "Name");
 
-            var level =await _classService.GetAllAsycn();
+            var level = await _classService.GetAllAsycn();
             ViewBag.levels = new SelectList(level, "Id", "Name");
 
-            var subject =await _subjectService.GetAllAsycn();
+            var subject = await _subjectService.GetAllAsycn();
             ViewBag.subjects = new SelectList(subject, "Id", "Name");
 
             TempData.Put("message", new ResultMessageDto()
@@ -217,7 +216,7 @@ namespace NLayer.Teacher.Controllers
         {
             if (examId != null || classId != null || lessonId != null || subjectId != null)
             {
-                 _examService.DeleteFromExam(examId, classId, lessonId, subjectId);
+                _examService.DeleteFromExam(examId, classId, lessonId, subjectId);
                 TempData.Put("message", new ResultMessageDto()
                 {
                     Title = "Silme basarili",
@@ -239,7 +238,7 @@ namespace NLayer.Teacher.Controllers
         [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
-            var values =await _examService.GetByIdAsycn(id);
+            var values = await _examService.GetByIdAsycn(id);
             if (values == null)
             {
                 return NotFound();
@@ -287,11 +286,11 @@ namespace NLayer.Teacher.Controllers
         [HttpGet]
         public async Task<IActionResult> Exam(int id)
         {
-            var exam =await _examService.GetByIdAsycn(id);
+            var exam = await _examService.GetByIdAsycn(id);
 
             var Examvalues = await _questionService.GetQuestionsByExamList(id);
             var ExamValueDto = _mapper.Map<List<Question>>(Examvalues);
-            
+
             var values = new QuestionListDto()
             {
 

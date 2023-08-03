@@ -16,7 +16,7 @@ namespace NLayer.Teacher.Controllers
         private readonly IExamService _examService;
         private readonly IQuestionService _questionService;
         private readonly IMapper _mapper;
-             
+
 
 
         public async Task<IActionResult> Index(ExamDto examDto)
@@ -78,7 +78,7 @@ namespace NLayer.Teacher.Controllers
                 foreach (var item in questionIds)
                 {
                     //buraya userId eklenecek
-                  _examQuestionsService.Create(examQuestionDto, item);
+                    _examQuestionsService.Create(examQuestionDto, item);
 
                 };
                 TempData.Put("message", new ResultMessageDto()

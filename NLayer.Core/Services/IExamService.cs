@@ -8,7 +8,7 @@ namespace NLayer.Core.Services
     {
         Task<List<ExamDto>> GetWithList();
 
-         void UpdateAsycn(ExamDto dto);
+        void UpdateAsycn(ExamDto dto);
 
         void DeleteFromExam(int examId, int classId, int lessonId, int subjectId);
     }

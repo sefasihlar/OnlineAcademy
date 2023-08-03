@@ -8,10 +8,10 @@ namespace NLayer.Repository.Configurations
     {
         public void Configure(EntityTypeBuilder<Lesson> builder)
         {
-             builder.HasOne(q => q.Class)
-                  .WithMany()
-                  .HasForeignKey(q => q.ClassId)
-                  .OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(q => q.Class)
+                 .WithMany()
+                 .HasForeignKey(q => q.ClassId)
+                 .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
