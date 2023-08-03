@@ -63,7 +63,10 @@ namespace NLayer.Teacher.Controllers
 
         }
 
-        [HttpPost]
+
+
+
+        [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
             var values = await _classService.GetByIdAsycn(id);

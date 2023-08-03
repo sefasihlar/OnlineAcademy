@@ -1,14 +1,11 @@
 ﻿@using NLayer.Core.DTOs.ClassDtos
-@model List<ClassDto>
-
+@model List<ClassDto> 
 @{
     ViewData["Title"] = "Index";
-}
- 
-<br />
+} 
+<br />  
 <div class="card">
     <div class="card-header">
-
         <div class="row">
             <div class="col">
                 <nav class="breadcrumb-style-one" aria-label="breadcrumb">
@@ -21,7 +18,7 @@
                 </nav>
             </div>
             <div class="col text-end">
-                <button data-bs-toggle="modal" data-bs-target="#NewClass"
+                <button type="button" data-bs-toggle="modal" data-bs-target="#fadeinModal"
                         class="btn btn-primary btn-sm">
                     + Yeni Sınıf
                 </button>
@@ -85,10 +82,10 @@
                                         else
                                         {
                                             <td><b class="badge badge-light-success">Aktif</b></td>
-                                        }
+                                        } 
                                         <td>
                                             <div class="btn-group">
-                                                <button type="button"
+                                                <button onclick="ClassUpdateGet(this)" data-Id="@item.Id" type="button"
                                                         class="btn btn-dark btn-sm">
                                                     İncele
                                                 </button>
@@ -106,38 +103,30 @@
                                                     </svg>
                                                 </button>
                                                 <div class="dropdown-menu"
-                                                     aria-labelledby="dropdownMenuReference1">
-                                                    <a class="dropdown-item" href="#">Pasif Et</a>
-                                                    <a class="dropdown-item" href="#">Sil</a>
-                                                    <a class="dropdown-item" href="#">İşlem 1</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#">İşlem 2</a>
+                                                     aria-labelledby="dropdownMenuReference1"> 
+                                                    <a class="dropdown-item" href="/Class/Delete/@item.Id"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>    Sil</a>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
-                               
                                 }
-
-                                 
-                               
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
+    </div> 
     <!-- Yeni Sınıf Eklemek için modal aç -->
-    <div id="NewClass" class="modal animated zoomInUp custo-zoomInUp" role="dialog">
+    <!-- <div id="NewClass" class="modal animated zoomInUp custo-fadeInDown" role="dialog">-->
+
+    <div id="fadeinModal" class="modal animated fadeInDown" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Yeni Sınıf Ekle</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Close">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                              height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -147,16 +136,16 @@
                         </svg>
                     </button>
                 </div>
-                <form id="NewClassSubmit">
+                <form id="NewClassSubmit" asp-controller="Class" asp-action="Create" method="post">
                     <div class="modal-body">
                         <div class="row mb-2">
                             <div class="col-3">
                                 <label for="name">Sınıf Adı</label>
                             </div>
                             <div class="col-9">
-                                <input type="text" id="name" name="name"
+                                <input type="text" id="Name" name="Name"
                                        class="form-control form-control-sm" required
-                                       placeholder="Şube giriniz">
+                                       placeholder="Sınıf giriniz">
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -167,15 +156,15 @@
                                 <div class="row">
                                     <div class="col-3">
                                         <div class="form-check">
-                                            <input type="radio" id="male" name="gender"
-                                                   class="form-check-input" value="Erkek" required checked>
+                                            <input type="radio" id="male" name="Condition"
+                                                   class="form-check-input" value="True" required checked>
                                             <label class="form-check-label" for="male">Aktif</label>
                                         </div>
                                     </div>
                                     <div class="col-2">
                                         <div class="form-check">
-                                            <input type="radio" id="female" name="gender"
-                                                   class="form-check-input" value="Kadın" required>
+                                            <input type="radio" id="female" name="Condition"
+                                                   class="form-check-input" value="False" required>
                                             <label class="form-check-label"
                                                    for="female">Pasif</label>
                                         </div>
@@ -194,8 +183,20 @@
                 </form>
             </div>
         </div>
+    </div> 
+
+    <div id="ClassUpdateAjax"> 
+        @await Component.InvokeAsync("ClassDetay");
     </div>
+
+
 
 
 </div>
 
+<script>
+
+    function ClassUpdateGet(value){ 
+    }
+
+</script>

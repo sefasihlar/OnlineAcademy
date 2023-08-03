@@ -1,0 +1,94 @@
+﻿@using NLayer.Core.DTOs.ClassDtos
+@model ClassDto 
+<div id="fadeinModal" class="modal animated fadeInDown" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sınıf Güncelle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div> 
+            <form id="UpdateClass" asp-controller="Class" asp-action="Update" method="post"> 
+
+                <input type="hidden" value="@Model.Id" name="Id" id="Id" /> 
+                <div class="modal-body">
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label for="name">Sınıf Adı</label>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" id="Name" name="Name" value="@Model.Name"
+                                   class="form-control form-control-sm" required
+                                   placeholder="Sınıf giriniz">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label>Durum</label>
+                        </div>
+
+                        @if (!Model.Condition)
+                        {
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input type="radio" id="male" name="Condition"
+                                                   class="form-check-input" value="True" required>
+                                            <label class="form-check-label" for="male">Aktif</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-check">
+                                            <input type="radio" checked id="female" name="Condition"
+                                                   class="form-check-input" value="False" required>
+                                            <label class="form-check-label"
+                                                   for="female">Pasif</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-check">
+                                            <input type="radio"  id="male" name="Condition" 
+                                                   class="form-check-input" value="True" required checked>
+                                            <label class="form-check-label" for="male">Aktif</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-check">
+                                            <input type="radio" id="female" name="Condition"
+                                                   class="form-check-input" value="False" required>
+                                            <label class="form-check-label"
+                                                   for="female">Pasif</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="modal-footer md-button">
+                    <button class="btn btn-light-dark btn-sm"
+                            data-bs-dismiss="modal">
+                        Kapat
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">Güncelle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
