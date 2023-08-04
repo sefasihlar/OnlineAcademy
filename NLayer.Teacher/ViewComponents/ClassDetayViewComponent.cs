@@ -2,11 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using NLayer.Core.DTOs.ClassDtos;
 using NLayer.Core.Services;
-using NLayer.Service.Services;
 
 namespace NLayer.Teacher.ViewComponents
 {
-    public class ClassDetayViewComponent:ViewComponent
+    public class ClassDetayViewComponent : ViewComponent
     {
         private readonly IClassService _classService;
         private readonly IMapper _maper;

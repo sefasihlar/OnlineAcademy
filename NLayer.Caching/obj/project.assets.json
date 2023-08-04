@@ -8,27 +8,25 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\fakia\\.nuget\\packages\\": {}
+    "C:\\Users\\metaa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Caching\\NLayer.Caching.csproj",
+      "projectUniqueName": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Caching\\NLayer.Caching.csproj",
       "projectName": "NLayer.Caching",
-      "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Caching\\NLayer.Caching.csproj",
-      "packagesPath": "C:\\Users\\fakia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Caching\\obj\\",
+      "projectPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Caching\\NLayer.Caching.csproj",
+      "packagesPath": "C:\\Users\\metaa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Caching\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fakia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+        "C:\\Users\\metaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -63,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

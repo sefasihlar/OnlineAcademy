@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using NLayer.Core.Concrate;
+using NLayer.Core.DTOs.AccountDtos;
 using NLayer.Core.DTOs.BranchDtos;
 using NLayer.Core.DTOs.CartDtos;
 using NLayer.Core.DTOs.CartItemDtos;
@@ -25,6 +26,7 @@ namespace NLayer.Service.Mapping
     {
         public MapProfile()
         {
+            CreateMap<AppUser, AppUserDto>().ReverseMap();
             //branch dtos
             CreateMap<Branch, BranchDto>().ReverseMap();
             CreateMap<Branch, BranchListDto>().ReverseMap();
