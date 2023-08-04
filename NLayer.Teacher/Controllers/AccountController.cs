@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using NLayer.Core.Concrate;
@@ -18,23 +19,25 @@ namespace NLayer.Teacher.Controllers
         private readonly IBranchService _branchService;
         private readonly ICartService _cartService;
         private readonly IGuardianService _guardianService;
+        private readonly IMapper _mapper;
 
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<AppRole> _roleManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public AccountController(IAppUserService appUserService, IClassService classService, IBranchService branchService, ICartService cartService, IGuardianService guardianService, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, SignInManager<AppUser> signInManager, IWebHostEnvironment webHostEnvironment)
+        public AccountController(IAppUserService appUserService, IClassService classService, IBranchService branchService, ICartService cartService, IGuardianService guardianService, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, SignInManager<AppUser> signInManager, IWebHostEnvironment webHostEnvironment, IMapper mapper)
         {
-            _appUserService=appUserService;
-            _classService=classService;
-            _branchService=branchService;
-            _cartService=cartService;
-            _guardianService=guardianService;
-            _userManager=userManager;
-            _roleManager=roleManager;
-            _signInManager=signInManager;
-            _webHostEnvironment=webHostEnvironment;
+            _appUserService = appUserService;
+            _classService = classService;
+            _branchService = branchService;
+            _cartService = cartService;
+            _guardianService = guardianService;
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _signInManager = signInManager;
+            _webHostEnvironment = webHostEnvironment;
+            _mapper = mapper;
         }
 
         //private readonly IEmailSender _emailSender;
@@ -160,21 +163,8 @@ namespace NLayer.Teacher.Controllers
 
             if (result.Succeeded)
             {
-                // kullanıcı başarıyla kaydedildi
-                Guardian _guardian = new Guardian()
-                {
-                    Id = guardian.Id,
-                    GuardianName = guardian.GuardianName,
-                    GuardianName2 = guardian.GuardianName2,
-                    GuardianSurName = guardian.GuardianSurName,
-                    GuardianSurName2 = guardian.GuardianSurName2,
-                    GuardianPhone = guardian.GuardianPhone,
-                    GuardianPhone2 = guardian.GuardianPhone2,
-                    UserId = user.Id,
-                    Condition = guardian.Condition,
-                    CreatedDate = DateTime.Now,
-                    UpdatedDate = DateTime.Now,
-                };
+                // kullanıcı başarıyla kaydedildi         
+                var _guardian = _mapper.Map<Guardian>(guardian);
 
                 if (_guardian != null)
                 {
@@ -250,15 +240,7 @@ namespace NLayer.Teacher.Controllers
                 var guardianList = await _guardianService.GetWithStudentList();
                 var guardian = guardianList.FirstOrDefault(x => x.UserId == dto.Id);
                 var guardianId = await _guardianService.GetByIdAsycn(guardian.Id);
-                if (guardianId != null)
-                {
-                    guardianId.GuardianName = guardianDto.GuardianName;
-                    guardianId.GuardianSurName = guardianDto.GuardianSurName;
-                    guardianId.GuardianPhone = guardianDto.GuardianPhone;
-                    guardianId.GuardianName2 = guardianDto.GuardianName2;
-                    guardianId.GuardianSurName2 = guardianDto.GuardianSurName2;
-                    guardianId.GuardianPhone2 = guardianDto.GuardianPhone2;
-                }
+                
 
                 await _guardianService.UpdateAsycn(guardianId);
                 TempData.Put("message", new ResultMessageDto()

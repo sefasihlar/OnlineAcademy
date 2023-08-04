@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NLayer.Teacher
 build_property.RootNamespace = NLayer.Teacher
-build_property.ProjectDir = C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Teacher\
+build_property.ProjectDir = C:\Users\fakia\OneDrive\Masaüstü\NewOnlineAcademy\OnlineAcademy\NLayer.Teacher\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\metaa\Masaüstü\Development\OnlineAcademy\NLayer.Teacher
+build_property.MSBuildProjectDirectory = C:\Users\fakia\OneDrive\Masaüstü\NewOnlineAcademy\OnlineAcademy\NLayer.Teacher
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/Branch/Index.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/Branch/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/Class/Index.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/Class/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/Home/Index.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/Home/Privacy.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/Shared/Components/ClassDetay/Default.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/Shared/Components/ClassDetay/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2xhc3NEZXRheVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/Shared/Error.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/Shared/_ResultMessage.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/Shared/_ResultMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXN1bHRNZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/_ViewImports.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/_ViewStart.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/metaa/Masaüstü/Development/OnlineAcademy/NLayer.Teacher/Views/Shared/_Layout.cshtml]
+[C:/Users/fakia/OneDrive/Masaüstü/NewOnlineAcademy/OnlineAcademy/NLayer.Teacher/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-eicazzfkvq
