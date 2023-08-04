@@ -4,7 +4,7 @@ namespace NLayer.Core.DTOs.ExamAnswersDtos
 {
     public class ExamAnswersListDto
     {
-        public List<ExamAnswers> ExamAnswers { get; set; }
+        public List<ExamAnswersDto> ExamAnswers { get; set; }
 
         public int UserId { get; set; }
         public int ExamId { get; set; }

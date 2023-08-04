@@ -1,10 +1,15 @@
-﻿using NLayer.Core.Concrate;
+﻿using NLayer.Core.Abstract;
+using NLayer.Core.Concrate;
 
 namespace NLayer.Core.DTOs.ScorsDtos
 {
-    public class ScorListDto
+    public class ScorListDto:BaseDto
     {
-        public List<Scors> scors { get; set; }
+        public int UserId { get; set; }
+        public AppUser User { get; set; }
+        public int ExamId { get; set; }
+        public Exam Exam { get; set; }
+        public List<ScorListDto> scors { get; set; }
         public int LessonId { get; set; }
 
         public string? ExamTitle { get; set; }
@@ -17,5 +22,7 @@ namespace NLayer.Core.DTOs.ScorsDtos
         public decimal TotalFalsePercentile { get; set; }
         public decimal TotalTruePercentile { get; set; }
         public decimal TotalScorPercentile { get; set; }
+
+ 
     }
 }
