@@ -28,6 +28,7 @@ namespace NLayer.Repository.Repositories
                     .Include(x => x.Question)
                     .ThenInclude(x => x.Options)
                     .Include(x => x.Exam)
+                    
                     .ToListAsync();
         }
 
