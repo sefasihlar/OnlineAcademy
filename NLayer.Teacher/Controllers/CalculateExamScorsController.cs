@@ -106,7 +106,7 @@ namespace NLayer.Teacher.Controllers
                     decimal ExamScor = Math.Round(totalScore / totalQuestion, 2);
                     var model = new ExamAnswersListDto()
                     {
-                        ExamAnswers =_mapper.Map<List<ExamAnswers>>(userExamAnswers),
+                        ExamAnswers =_mapper.Map<List<ExamAnswersDto>>(userExamAnswers),
                         QuestionFalse = questionFalse,
                         QuestionTrue = questionTrue,
                         QuestionNull = nullQuestion,

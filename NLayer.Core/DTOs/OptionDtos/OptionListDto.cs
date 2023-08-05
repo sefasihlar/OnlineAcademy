@@ -4,6 +4,6 @@ namespace NLayer.Core.DTOs.OptionDtos
 {
     public class OptionListDto
     {
-        public List<Option> Options { get; set; }
+        public List<OptionDto> Options { get; set; }
     }
 }
