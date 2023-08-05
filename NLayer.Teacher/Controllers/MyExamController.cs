@@ -34,8 +34,11 @@ namespace NLayer.Teacher.Controllers
         {
 
             var ExamAnswerList = await _answerService.GetAllAsycn();
+
             var CartItemList = await _cartItemService.GetAllAsycn();
+
             var ExamList = await _examService.GetWithList();
+
             var ExamListEntity = _mapper.Map<List<Exam>>(ExamList);
 
             var userId = _userManager.GetUserId((System.Security.Claims.ClaimsPrincipal)User);
