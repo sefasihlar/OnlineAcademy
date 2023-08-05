@@ -46,7 +46,7 @@ namespace NLayer.Teacher.Controllers
             {
                 // Kullanıcının sınav cevaplarını al
                 var userExamAnswersFilter = await _examAnswersService.GetListTogether();
-                    
+
                 var userExamAnswers = userExamAnswersFilter.Where(x => x.ExamId == id && x.UserId == user.Id).ToList();
 
                 var nullQuestion = 0;
@@ -65,7 +65,7 @@ namespace NLayer.Teacher.Controllers
                 {
                     if (examAnswer.OptionId != null)
                     {
-                        var solutions =await _solutionService.GetWithQuestionList();
+                        var solutions = await _solutionService.GetWithQuestionList();
                         var solution = solutions.FirstOrDefault(s => s.Question.Id == examAnswer.Question.Id && s.OptionId == examAnswer.Option.Id);
 
                         var TrueOption = solutions.FirstOrDefault(s => s.Question.Id == examAnswer.QuestionId).Option.Name;
@@ -90,7 +90,7 @@ namespace NLayer.Teacher.Controllers
                     }
                     else
                     {
-                        var solutions =await _solutionService.GetWithQuestionList();
+                        var solutions = await _solutionService.GetWithQuestionList();
                         var TrueOption = solutions.FirstOrDefault(s => s.Question.Id == examAnswer.QuestionId).Option.Name;
                         correctAnswers.Add(TrueOption);
                         nullQuestion += 1;
@@ -130,7 +130,7 @@ namespace NLayer.Teacher.Controllers
                     };
 
                     // Modeli veritabanına kaydet
-                   await _scorsService.AddAsycn(values);
+                    await _scorsService.AddAsycn(values);
                     TempData.Put("message", new ResultMessageDto()
                     {
                         Title = "Başarılı",
@@ -149,8 +149,8 @@ namespace NLayer.Teacher.Controllers
         public async Task<IActionResult> UpdateScors(int id, bool condition)
         {
             var scorsList = await _scorsService.GetAllAsycn();
-                
-             var scors = scorsList.Where(x => x.ExamId == id).ToList();
+
+            var scors = scorsList.Where(x => x.ExamId == id).ToList();
             if (scors != null)
             {
                 if (condition == true)
@@ -158,7 +158,7 @@ namespace NLayer.Teacher.Controllers
                     foreach (var item in scors)
                     {
                         item.Condition = condition;
-                       await _scorsService.UpdateAsycn(item);
+                        await _scorsService.UpdateAsycn(item);
                     }
 
                     TempData.Put("message", new ResultMessageDto()
@@ -176,7 +176,7 @@ namespace NLayer.Teacher.Controllers
                     foreach (var item in scors)
                     {
                         item.Condition = condition;
-                       await _scorsService.UpdateAsycn(item);
+                        await _scorsService.UpdateAsycn(item);
                     }
 
                     TempData.Put("message", new ResultMessageDto()

@@ -2,7 +2,7 @@
 
 namespace NLayer.Teacher.Controllers
 {
-    public class ErrorController: Controller
+    public class ErrorController : Controller
     {
         public IActionResult AccessDenied()
         {

@@ -6,7 +6,7 @@ using NLayer.Service.GenericManager;
 
 namespace NLayer.Service.Services
 {
-    public class OptionService : Service<Option>,IOptionService
+    public class OptionService : Service<Option>, IOptionService
     {
         public OptionService(IGenericRepository<Option> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {

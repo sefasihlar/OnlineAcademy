@@ -1,8 +1,5 @@
 ﻿using NLayer.Core.Concrate;
-using NLayer.Core.DTOs.ClassDtos;
 using NLayer.Core.DTOs.LessonDtos;
-using NLayer.Core.DTOs.OutputDtos;
-using NLayer.Core.DTOs.SubjectDtos;
 
 namespace NLayer.Core.DTOs.QuestionDtos
 {

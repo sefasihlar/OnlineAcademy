@@ -6,7 +6,6 @@ using NLayer.Core.Concrate;
 using NLayer.Core.DTOs.AccountDtos;
 using NLayer.Core.DTOs.GuardianDtos;
 using NLayer.Core.DTOs.MessageDtos;
-using NLayer.Core.Repositories;
 using NLayer.Core.Services;
 using NLayer.WebUI.Extensions;
 
@@ -240,7 +239,7 @@ namespace NLayer.Teacher.Controllers
                 var guardianList = await _guardianService.GetWithStudentList();
                 var guardian = guardianList.FirstOrDefault(x => x.UserId == dto.Id);
                 var guardianId = await _guardianService.GetByIdAsycn(guardian.Id);
-                
+
 
                 await _guardianService.UpdateAsycn(guardianId);
                 TempData.Put("message", new ResultMessageDto()

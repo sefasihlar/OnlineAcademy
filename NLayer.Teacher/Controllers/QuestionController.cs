@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Options;
 using NLayer.Core.Concrate;
 using NLayer.Core.DTOs.LessonDtos;
 using NLayer.Core.DTOs.MessageDtos;
@@ -93,19 +92,19 @@ namespace NLayer.Teacher.Controllers
 
             ViewBag.clases = new SelectList(clases, "Id", "Name");
 
-            var lessons =await _lessonService.GetAllAsycn();
+            var lessons = await _lessonService.GetAllAsycn();
             ViewBag.lessons = new SelectList(lessons, "Id", "Name");
 
             var level = await _levelService.GetAllAsycn();
             ViewBag.levels = new SelectList(level, "Id", "Name");
 
-            var subject =await _subjectService.GetAllAsycn();
+            var subject = await _subjectService.GetAllAsycn();
             ViewBag.subjects = new SelectList(subject, "Id", "Name");
 
-            var output =await _outputService.GetAllAsycn();
+            var output = await _outputService.GetAllAsycn();
             ViewBag.outputs = new SelectList(output, "Id", "Name");
 
-            var option =await _questionService.GetAllAsycn();
+            var option = await _questionService.GetAllAsycn();
             ViewBag.options = new SelectList(option, "Id", "Name");
 
             return View(values);
@@ -176,7 +175,7 @@ namespace NLayer.Teacher.Controllers
 
         public async Task<JsonResult> Lesson(int id)
         {
-            var lessonList =  _lessonService.GetWithClassList();
+            var lessonList = _lessonService.GetWithClassList();
             var lessonListDto = _mapper.Map<List<LessonDto>>(lessonList);
 
             var values = lessonListDto.Where(x => x.ClassId == id).ToList();
@@ -258,7 +257,7 @@ namespace NLayer.Teacher.Controllers
 
             if (values != null)
             {
-               await _questionService.AddAsycn(values);
+                await _questionService.AddAsycn(values);
                 TempData.Put("message", new ResultMessageDto()
                 {
                     Title = "Başarılı",
@@ -275,24 +274,24 @@ namespace NLayer.Teacher.Controllers
             foreach (var item in questionOptions)
             {
                 item.QuestionId = questionId;
-               await _optionService.AddAsycn(item);
+                await _optionService.AddAsycn(item);
             }
 
             //eger bir validation ile karsilasirsa dropdownlarin tekara dolmasi icin tekrar ediyoruz
 
-            var lesson =await _lessonService.GetAllAsycn();
+            var lesson = await _lessonService.GetAllAsycn();
             ViewBag.lessons = new SelectList(lesson, "Id", "Name");
 
-            var level =await _levelService.GetAllAsycn();
+            var level = await _levelService.GetAllAsycn();
             ViewBag.levels = new SelectList(level, "Id", "Name");
 
-            var subject =await _subjectService.GetAllAsycn();
+            var subject = await _subjectService.GetAllAsycn();
             ViewBag.subjects = new SelectList(subject, "Id", "Name");
 
-            var output =await _outputService.GetAllAsycn();
+            var output = await _outputService.GetAllAsycn();
             ViewBag.outputs = new SelectList(output, "Id", "Name");
 
-            var option =await _optionService.GetAllAsycn();
+            var option = await _optionService.GetAllAsycn();
             ViewBag.options = new SelectList(option, "Id", "Name");
 
             TempData.Put("message", new ResultMessageDto()
@@ -315,7 +314,7 @@ namespace NLayer.Teacher.Controllers
         [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
-            var values =await _questionService.GetByIdAsycn(id);
+            var values = await _questionService.GetByIdAsycn(id);
             if (values == null)
             {
                 TempData.Put("message", new ResultMessageDto()
@@ -350,7 +349,7 @@ namespace NLayer.Teacher.Controllers
         public async Task<IActionResult> Update(QuestionDto model, IFormFile file)
         {
 
-            var values =await _questionService.GetByIdAsycn(model.Id);
+            var values = await _questionService.GetByIdAsycn(model.Id);
             if (values != null)
             {
                 values.Text = model.Text;
@@ -375,7 +374,7 @@ namespace NLayer.Teacher.Controllers
                 values.Condition = model.Condition;
 
 
-               await _questionService.UpdateAsycn(values);
+                await _questionService.UpdateAsycn(values);
                 TempData.Put("message", new ResultMessageDto()
                 {
                     Title = "Başarılı",
