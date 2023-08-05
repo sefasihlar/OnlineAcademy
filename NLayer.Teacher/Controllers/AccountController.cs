@@ -21,9 +21,9 @@ namespace NLayer.Teacher.Controllers
         private readonly IGuardianService _guardianService;
         private readonly IMapper _mapper;
 
-        private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<AppRole> _roleManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
         public AccountController(IAppUserService appUserService, IClassService classService, IBranchService branchService, ICartService cartService, IGuardianService guardianService, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, SignInManager<AppUser> signInManager, IWebHostEnvironment webHostEnvironment, IMapper mapper)
