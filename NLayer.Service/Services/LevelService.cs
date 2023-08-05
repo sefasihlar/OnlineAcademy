@@ -6,7 +6,7 @@ using NLayer.Service.GenericManager;
 
 namespace NLayer.Service.Services
 {
-    public class LevelService : Service<Level>,ILevelService
+    public class LevelService : Service<Level>, ILevelService
     {
         public LevelService(IGenericRepository<Level> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {

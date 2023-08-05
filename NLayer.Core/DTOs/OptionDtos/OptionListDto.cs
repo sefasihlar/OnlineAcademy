@@ -1,6 +1,4 @@
-﻿using NLayer.Core.Concrate;
-
-namespace NLayer.Core.DTOs.OptionDtos
+﻿namespace NLayer.Core.DTOs.OptionDtos
 {
     public class OptionListDto
     {

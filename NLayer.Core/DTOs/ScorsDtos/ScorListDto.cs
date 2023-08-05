@@ -3,7 +3,7 @@ using NLayer.Core.Concrate;
 
 namespace NLayer.Core.DTOs.ScorsDtos
 {
-    public class ScorListDto:BaseDto
+    public class ScorListDto : BaseDto
     {
         public int UserId { get; set; }
         public AppUser User { get; set; }
@@ -23,6 +23,6 @@ namespace NLayer.Core.DTOs.ScorsDtos
         public decimal TotalTruePercentile { get; set; }
         public decimal TotalScorPercentile { get; set; }
 
- 
+
     }
 }
