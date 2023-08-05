@@ -9,7 +9,7 @@ using NLayer.Core.Services;
 
 namespace NLayer.Teacher.Controllers
 {
-    public class ExamResultController:Controller
+    public class ExamResultController : Controller
     {
         private readonly IExamAnswersService _examAnswersService;
         private readonly ISolutionService _solutionService;
@@ -35,7 +35,7 @@ namespace NLayer.Teacher.Controllers
         public async Task<IActionResult> Index()
         {
             var userId = _userManager.GetUserId((System.Security.Claims.ClaimsPrincipal)User);
-            var getId =await _appUserService.GetByIdAsycn(Convert.ToInt32(userId));
+            var getId = await _appUserService.GetByIdAsycn(Convert.ToInt32(userId));
 
             var scorsList = await _scorsService.GetTogetherList();
 
@@ -54,7 +54,7 @@ namespace NLayer.Teacher.Controllers
         public async Task<IActionResult> ResultQuestions(int id)
         {
             var userId = _userManager.GetUserId((System.Security.Claims.ClaimsPrincipal)User);
-            var getId =await _appUserService.GetByIdAsycn(Convert.ToInt32(userId));
+            var getId = await _appUserService.GetByIdAsycn(Convert.ToInt32(userId));
 
             ViewBag.userId = getId.Id;
 
@@ -74,7 +74,7 @@ namespace NLayer.Teacher.Controllers
                 return NotFound();
             }
 
-            var solutions =await _solutionService.GetWithQuestionList();
+            var solutions = await _solutionService.GetWithQuestionList();
 
 
             foreach (var examAnswer in examAnswers)

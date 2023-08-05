@@ -1,6 +1,4 @@
-﻿using NLayer.Core.Concrate;
-
-namespace NLayer.Core.DTOs.ExamAnswersDtos
+﻿namespace NLayer.Core.DTOs.ExamAnswersDtos
 {
     public class ExamAnswersListDto
     {

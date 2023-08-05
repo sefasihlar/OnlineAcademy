@@ -7,7 +7,7 @@ using NLayer.Service.GenericManager;
 
 namespace NLayer.Service.Services
 {
-    public class QuestionService : Service<Question>,IQuestionService
+    public class QuestionService : Service<Question>, IQuestionService
     {
         public QuestionService(IGenericRepository<Question> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {

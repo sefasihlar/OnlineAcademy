@@ -1,8 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ApplicationModels;
-using Microsoft.CodeAnalysis.Options;
-using Microsoft.Extensions.Options;
 using NLayer.Core.Concrate;
 using NLayer.Core.DTOs.MessageDtos;
 using NLayer.Core.DTOs.OptionDtos;
@@ -77,7 +74,7 @@ namespace NLayer.Teacher.Controllers
 
         public async Task<IActionResult> Delete(OptionDto dto)
         {
-            var values =await _optionService.GetByIdAsycn(dto.Id);
+            var values = await _optionService.GetByIdAsycn(dto.Id);
             if (values != null)
             {
                 await _optionService.RemoveAsycn(values);
@@ -90,7 +87,7 @@ namespace NLayer.Teacher.Controllers
         [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
-            var values =await _optionService.GetByIdAsycn(id);
+            var values = await _optionService.GetByIdAsycn(id);
 
             if (values == null)
             {
@@ -100,7 +97,7 @@ namespace NLayer.Teacher.Controllers
             var optionDto = _mapper.Map<OptionDto>(values);
 
             return View(optionDto);
-            
+
         }
     }
 }

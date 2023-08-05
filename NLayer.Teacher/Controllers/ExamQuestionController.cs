@@ -23,8 +23,8 @@ namespace NLayer.Teacher.Controllers
         {
             List<int> SelectedQuestionIds = new List<int>();
             var ExamQuestions = await _examQuestionsService.GetQuestionsList();
-            var questionFilter = ExamQuestions.Where(x => x.ExamId == examDto.Id).ToList(); 
-            var questions = await _questionService.GetWithList(); 
+            var questionFilter = ExamQuestions.Where(x => x.ExamId == examDto.Id).ToList();
+            var questions = await _questionService.GetWithList();
             var questionEntity = _mapper.Map<List<Question>>(questions);
 
             var values = new QuestionListDto()
