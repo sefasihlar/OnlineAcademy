@@ -39,12 +39,13 @@ namespace NLayer.Teacher.Controllers
         public async Task<IActionResult> Index(int LessonId, int SubjectId, int OutputId)
         {
             var questionList = await _questionService.GetWithList();
+            var questionListEntitiy = _mapper.Map<List<Question>>(questionList);
 
             if (LessonId != 0 && SubjectId != 0 && OutputId != 0)
             {
                 var val = new QuestionListDto()
                 {
-                    Questions =questionList
+                    Questions =questionListEntitiy
                     .Where(x => x.LessonId == LessonId)
                     .Where(x => x.SubjectId == SubjectId)
                     .Where(x => x.OutputId == OutputId)
@@ -59,7 +60,7 @@ namespace NLayer.Teacher.Controllers
             {
                 var val = new QuestionListDto()
                 {
-                    Questions = questionList
+                    Questions = questionListEntitiy
                   .Where(x => x.LessonId == LessonId)
                   .ToList()
 
@@ -72,7 +73,7 @@ namespace NLayer.Teacher.Controllers
             {
                 var val = new QuestionListDto()
                 {
-                    Questions = questionList
+                    Questions = questionListEntitiy
                   .Where(x => x.LessonId == LessonId)
                   .Where(x => x.SubjectId == SubjectId)
                   .ToList()
@@ -84,7 +85,7 @@ namespace NLayer.Teacher.Controllers
 
             var values = new QuestionListDto()
             {
-                Questions = questionList
+                Questions = questionListEntitiy
 
             };
 
@@ -111,15 +112,16 @@ namespace NLayer.Teacher.Controllers
 
         }
 
-        public async IActionResult FilterList(int LessonId, int SubjectId, int OutputId)
+        public async Task<IActionResult> FilterList(int LessonId, int SubjectId, int OutputId)
         {
             var questionList = await _questionService.GetWithList();
+            var questionListEntitiy = _mapper.Map<List<Question>>(questionList);
             if (LessonId != null && SubjectId != null && OutputId != null)
             {
 
                 var val = new QuestionListDto()
                 {
-                    Questions = questionList
+                    Questions = questionListEntitiy
                     .Where(x => x.LessonId == LessonId)
                     .Where(x => x.SubjectId == SubjectId)
                     .Where(x => x.OutputId == OutputId)
@@ -134,7 +136,7 @@ namespace NLayer.Teacher.Controllers
             {
                 var val = new QuestionListDto()
                 {
-                    Questions = questionList
+                    Questions = questionListEntitiy
                   .Where(x => x.LessonId == LessonId)
                   .ToList()
 
@@ -147,7 +149,7 @@ namespace NLayer.Teacher.Controllers
             {
                 var val = new QuestionListDto()
                 {
-                    Questions = questionList
+                    Questions = questionListEntitiy
                   .Where(x => x.LessonId == LessonId)
                   .Where(x => x.SubjectId == SubjectId)
                   .ToList()
@@ -159,7 +161,7 @@ namespace NLayer.Teacher.Controllers
 
             var values = new QuestionListDto()
             {
-                Questions =questionList
+                Questions =questionListEntitiy
 
             };
 
@@ -182,7 +184,7 @@ namespace NLayer.Teacher.Controllers
         }
         public async Task<JsonResult> Subject(int id)
         {
-            var subjectList =await _subjectService.GetWithLessonList()
+            var subjectList = await _subjectService.GetWithLessonList();
             var values = subjectList.Where(x => x.LessonId == id).ToList();
             return Json(values);
         }

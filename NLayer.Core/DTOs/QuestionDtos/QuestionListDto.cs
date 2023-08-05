@@ -8,11 +8,11 @@ namespace NLayer.Core.DTOs.QuestionDtos
 {
     public class QuestionListDto
     {
-        public List<QuestionDto> Questions { get; set; }
-        public List<ClassDto> Classes { get; set; }
-        public List<SubjectDto> Subjects { get; set; }
+        public List<Question> Questions { get; set; }
+        public List<Class> Classes { get; set; }
+        public List<Subject> Subjects { get; set; }
         public List<LessonDto> Lessons { get; set; }
-        public List<OutputDto> Outputs { get; set; }
+        public List<Output> Outputs { get; set; }
         public int SureDegeri { get; set; }
 
         public List<int> SelectedQuestions { get; set; }
