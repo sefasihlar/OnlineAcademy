@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Teacher\\NLayer.Teacher.csproj": {}
+    "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Teacher\\NLayer.Teacher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj": {
+    "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj",
+        "projectUniqueName": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj",
         "projectName": "NLayer.Core",
-        "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj",
-        "packagesPath": "C:\\Users\\fakia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Core\\obj\\",
+        "projectPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj",
+        "packagesPath": "C:\\Users\\metaa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fakia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\metaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -71,29 +69,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj": {
+    "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj",
         "projectName": "NLayer.Repository",
-        "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj",
-        "packagesPath": "C:\\Users\\fakia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Repository\\obj\\",
+        "projectPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj",
+        "packagesPath": "C:\\Users\\metaa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fakia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\metaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -101,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj": {
-                "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj"
+              "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj": {
+                "projectPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Core\\NLayer.Core.csproj"
               }
             }
           }
@@ -156,29 +152,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj": {
+    "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj",
+        "projectUniqueName": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj",
         "projectName": "NLayer.Service",
-        "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj",
-        "packagesPath": "C:\\Users\\fakia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Service\\obj\\",
+        "projectPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj",
+        "packagesPath": "C:\\Users\\metaa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fakia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\metaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -186,8 +180,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj": {
-                "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj"
+              "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj": {
+                "projectPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Repository\\NLayer.Repository.csproj"
               }
             }
           }
@@ -235,39 +229,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Teacher\\NLayer.Teacher.csproj": {
+    "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Teacher\\NLayer.Teacher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Teacher\\NLayer.Teacher.csproj",
+        "projectUniqueName": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Teacher\\NLayer.Teacher.csproj",
         "projectName": "NLayer.Teacher",
-        "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Teacher\\NLayer.Teacher.csproj",
-        "packagesPath": "C:\\Users\\fakia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Teacher\\obj\\",
+        "projectPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Teacher\\NLayer.Teacher.csproj",
+        "packagesPath": "C:\\Users\\metaa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Teacher\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fakia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\metaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj": {
-                "projectPath": "C:\\Users\\fakia\\OneDrive\\Masaüstü\\NewOnlineAcademy\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj"
+              "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj": {
+                "projectPath": "C:\\Users\\metaa\\Masaüstü\\Development\\OnlineAcademy\\NLayer.Service\\NLayer.Service.csproj"
               }
             }
           }
@@ -332,7 +323,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
